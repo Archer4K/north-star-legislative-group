@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior:smooth; }
+body { @apply bg-paper text-ink antialiased; }
+::selection { background:#dfeaf8; color:#0b1f33; }
+.serif { font-family: Georgia, "Times New Roman", serif; }
+.kicker { @apply text-[11px] font-bold uppercase tracking-[0.18em] text-blue; }
+.display { @apply serif text-[clamp(3rem,7vw,6.5rem)] leading-[0.94] tracking-[-0.055em] font-normal; }
+.h2 { @apply serif text-[clamp(2.25rem,4.5vw,4.35rem)] leading-[1.02] tracking-[-0.035em] font-normal; }
+.lede { @apply text-[clamp(1.05rem,2vw,1.3rem)] leading-8 text-slate-600; }
+.container-site { @apply mx-auto w-[min(calc(100%-2rem),1180px)]; }
+.section { @apply py-20 md:py-28; }
+.card { @apply border border-line bg-white p-7 transition duration-200 hover:-translate-y-1 hover:border-slate-400; }
+.btn { @apply inline-flex items-center gap-2 border border-ink px-4 py-3 text-sm font-bold transition hover:bg-ink hover:text-white; }
+.btn-primary { @apply bg-ink text-white hover:border-blue hover:bg-blue; }
