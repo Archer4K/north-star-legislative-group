@@ -18,7 +18,7 @@ const steps = [
   },
 ];
 
-const darkCard = { backgroundColor: "#111111", borderColor: "#111111" };
+const darkCard = { backgroundColor: "#3f3f3f", borderColor: "#3f3f3f" };
 
 export default function Research() {
   return (
