@@ -8,7 +8,7 @@ export const impact = [
 export const nav = [
   { href:"/about", label:"About" },
   { href:"/work", label:"Our Work" },
-  { href:"/research", label:"Research" },
+  { href:"/research", label:"Resources" },
   { href:"/team", label:"Team" },
   { href:"/opportunities", label:"Opportunities" },
 ];
