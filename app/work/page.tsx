@@ -16,7 +16,7 @@ export default function Work() {
           <div className="kicker">Work completed</div>
           <h2 className="h2 mt-4">Already in motion.</h2>
           <div className="mt-10 grid gap-4 lg:grid-cols-3">
-            <Link href="/work/sb-3670" className="card min-h-[390px] border-black bg-[#141414] text-white lg:col-span-2 hover:border-black hover:bg-black">
+            <Link href="/work/sb-3670" className="card min-h-[390px] border-black bg-black text-white lg:col-span-2 hover:border-black hover:bg-black">
               <div>
                 <div className="text-xs font-bold uppercase tracking-[.12em] text-slate-300">Health · Illinois · Introduced</div>
                 <h3 className="serif mt-5 text-4xl tracking-tight">Catch Heart Disease Early Act</h3>
