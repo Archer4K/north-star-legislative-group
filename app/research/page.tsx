@@ -18,8 +18,6 @@ const steps = [
   },
 ];
 
-const darkCard = { backgroundColor: "#3f3f3f", borderColor: "#3f3f3f" };
-
 export default function Research() {
   return (
     <>
@@ -41,10 +39,10 @@ export default function Research() {
 
           <div className="mt-10 grid gap-4 lg:grid-cols-3">
             {steps.map((step) => (
-              <article key={step.number} className="card min-h-[280px] text-white" style={darkCard}>
+              <article key={step.number} className="card min-h-[280px]">
                 <div className="text-xs font-bold tracking-[.14em] text-slate-300">{step.number}</div>
-                <h3 className="serif mt-8 text-3xl text-white">{step.title}</h3>
-                <p className="mt-5 leading-7 text-slate-200">{step.text}</p>
+                <h3 className="serif mt-8 text-3xl">{step.title}</h3>
+                <p className="mt-5 leading-7 text-slate-700">{step.text}</p>
               </article>
             ))}
           </div>
@@ -62,10 +60,10 @@ export default function Research() {
           </div>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
-            <article className="card min-h-[340px] text-white" style={darkCard}>
+            <article className="card min-h-[340px]">
               <div>
-                <h3 className="serif text-4xl text-white">Bill template</h3>
-                <p className="mt-5 max-w-xl leading-7 text-slate-200">
+                <h3 className="serif text-4xl">Bill template</h3>
+                <p className="mt-5 max-w-xl leading-7 text-slate-700">
                   Structure a legislative proposal with a short title, findings and purpose, definitions, the policy itself, oversight, and a timeline.
                 </p>
               </div>
@@ -78,7 +76,7 @@ export default function Research() {
                   Download Word template
                 </a>
                 <a
-                  className="inline-flex border border-white px-4 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-[#111111]"
+                  className="inline-flex border border-[#3f3f3f] px-4 py-3 text-sm font-bold text-[#1f2937] transition hover:bg-[#3f3f3f] hover:text-white"
                   href="/documents/nslg-bill-template.pdf"
                   target="_blank"
                   rel="noreferrer"

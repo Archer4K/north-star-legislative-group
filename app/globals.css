@@ -13,8 +13,7 @@ body { @apply bg-paper text-ink antialiased; }
 .lede { @apply text-[clamp(1.05rem,2vw,1.3rem)] leading-8 text-slate-600; }
 .container-site { @apply mx-auto w-[min(calc(100%-2rem),1180px)]; }
 .section { @apply py-20 md:py-28; }
-.card { @apply border border-[#3f3f3f] bg-[#3f3f3f] p-7 text-white transition duration-200 hover:-translate-y-1 hover:border-slate-500; }
-.card .text-muted, .card .text-slate-600, .card .text-slate-700 { color: #e5e7eb; }
-.card .text-navy { color: #ffffff; }
+.card { background: rgba(255,255,255,.45); border: 2px solid #3f3f3f; color: #1f2937; padding: 1.75rem; transition: transform 200ms, background-color 200ms; }
+.card:hover { transform: translateY(-0.25rem); background: rgba(255,255,255,.62); }
 .btn { @apply inline-flex items-center gap-2 border border-ink px-4 py-3 text-sm font-bold transition hover:bg-ink hover:text-white; }
 .btn-primary { @apply bg-ink text-white hover:border-blue hover:bg-blue; }
