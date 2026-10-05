@@ -2,7 +2,7 @@ export const impact = [
   { value:"5+", label:"Pieces of legislation introduced" },
   { value:"$20K+", label:"Raised for nonprofit initiatives" },
   { value:"6+", label:"Nonprofits supported" },
-  { value:"100s", label:"Volunteers mobilized" },
+  { value:"10+", label:"Volunteers mobilized" },
 ];
 
 export const nav = [
