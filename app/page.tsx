@@ -1,21 +1,28 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { impact } from "@/data/site";
 
 export default function Home() {
   return (
     <>
       <section className="section">
-        <div className="container-site grid gap-12 md:grid-cols-[.7fr_1.3fr]">
+        <div className="container-site max-w-5xl">
           <div className="kicker">Our mission</div>
-          <div>
-            <h1 className="serif text-[clamp(2.2rem,4vw,3.7rem)] leading-[1.08] tracking-[-.03em]">
-              We turn careful research into practical policy—and practical policy into legislative action.
-            </h1>
-            <p className="lede mt-6">
-              North Star brings together policy research, legislative drafting, coalition-building, and community mobilization to help serious ideas move through real institutions.
-            </p>
-          </div>
+          <h1 className="serif mt-4 text-[clamp(2.2rem,4vw,3.7rem)] leading-[1.08] tracking-[-.03em]">
+            We mobilize policy action by supporting local organizations and creating powerful policy advocates
+          </h1>
         </div>
+      </section>
+
+      <section className="container-site grid border-y border-line sm:grid-cols-2 lg:grid-cols-4">
+        {impact.map((item) => (
+          <div key={item.label} className="border-b border-line py-6 sm:border-r lg:border-b-0 last:border-r-0">
+            <div className="serif text-4xl tracking-tight">{item.value}</div>
+            <div className="mt-1 max-w-[180px] text-[11px] font-bold uppercase tracking-[.12em] text-muted">
+              {item.label}
+            </div>
+          </div>
+        ))}
       </section>
 
       <section className="section border-t border-line">
