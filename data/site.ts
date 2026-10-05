@@ -1,6 +1,6 @@
 export const impact = [
-  { value:"5+", label:"Pieces of legislation introduced" },
-  { value:"$20K+", label:"Raised for nonprofit initiatives" },
+  { value:"5+", label:"Legislation drafted" },
+  { value:"$10K+", label:"Money raised" },
   { value:"6+", label:"Nonprofits supported" },
   { value:"10+", label:"Volunteers mobilized" },
 ];
