@@ -86,10 +86,10 @@ export default function Research() {
               </div>
             </article>
 
-            <article className="card min-h-[340px] text-white" style={darkCard}>
+            <article className="card min-h-[340px]">
               <div>
-                <h3 className="serif text-4xl text-white">Fact sheet template</h3>
-                <p className="mt-5 max-w-xl leading-7 text-slate-200">
+                <h3 className="serif text-4xl">Fact sheet template</h3>
+                <p className="mt-5 max-w-xl leading-7 text-slate-700">
                   Build a concise, evidence-based case that covers the problem, its cause, how the policy responds, and the impacts it can create.
                 </p>
               </div>
@@ -102,7 +102,7 @@ export default function Research() {
                   Download Word template
                 </a>
                 <a
-                  className="inline-flex border border-white px-4 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-[#111111]"
+                  className="inline-flex border border-[#3f3f3f] px-4 py-3 text-sm font-bold text-[#1f2937] transition hover:bg-[#3f3f3f] hover:text-white"
                   href="/documents/nslg-fact-sheet-template.pdf"
                   target="_blank"
                   rel="noreferrer"
