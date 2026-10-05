@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 
 const steps = [
@@ -18,6 +17,8 @@ const steps = [
     text: "Start local. Share the proposal with community organizations, residents, and the public official or legislative office that can help turn it into action.",
   },
 ];
+
+const darkCard = { backgroundColor: "#111111", borderColor: "#111111" };
 
 export default function Research() {
   return (
@@ -40,52 +41,76 @@ export default function Research() {
 
           <div className="mt-10 grid gap-4 lg:grid-cols-3">
             {steps.map((step) => (
-              <article key={step.number} className="card min-h-[280px]">
-                <div className="text-xs font-bold tracking-[.14em] text-muted">{step.number}</div>
-                <h3 className="serif mt-8 text-3xl text-navy">{step.title}</h3>
-                <p className="mt-5 leading-7 text-slate-600">{step.text}</p>
+              <article key={step.number} className="card min-h-[280px] text-white" style={darkCard}>
+                <div className="text-xs font-bold tracking-[.14em] text-slate-300">{step.number}</div>
+                <h3 className="serif mt-8 text-3xl text-white">{step.title}</h3>
+                <p className="mt-5 leading-7 text-slate-200">{step.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section border-t border-slate-200 bg-[#f6f5f1]">
+      <section className="section border-t border-slate-300 bg-[#ebe9e3]">
         <div className="container-site">
           <div className="max-w-2xl">
-            <div className="text-xs font-bold uppercase tracking-[.12em] text-muted">Working templates</div>
+            <div className="text-xs font-bold uppercase tracking-[.12em] text-slate-700">Templates</div>
             <h2 className="serif mt-4 text-4xl text-navy">Put your research into a form people can use.</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              Download the editable templates to organize a proposal and explain it clearly to community partners and policymakers.
+            <p className="mt-5 text-lg leading-8 text-slate-700">
+              Download either template as an editable Word document or open the PDF version.
             </p>
           </div>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
-            <article className="card min-h-[340px] bg-navy text-white">
+            <article className="card min-h-[340px] text-white" style={darkCard}>
               <div>
-                <div className="text-xs font-bold uppercase tracking-[.12em] text-slate-300">Drafting tool</div>
-                <h3 className="serif mt-5 text-4xl">Bill template</h3>
-                <p className="mt-5 max-w-xl leading-7 text-slate-300">
+                <h3 className="serif text-4xl text-white">Bill template</h3>
+                <p className="mt-5 max-w-xl leading-7 text-slate-200">
                   Structure a legislative proposal with a short title, findings and purpose, definitions, the policy itself, oversight, and a timeline.
                 </p>
               </div>
-              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold">
-                <Link className="underline underline-offset-4" href="/documents/nslg-bill-template.docx">Download editable template</Link>
-                <Link className="underline underline-offset-4" href="/documents/nslg-bill-template.pdf">View PDF</Link>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <a
+                  className="inline-flex border border-white bg-white px-4 py-3 text-sm font-bold text-[#111111] transition hover:bg-slate-200"
+                  href="/documents/NSLG%20Bill%20Template.docx"
+                  download
+                >
+                  Download Word template
+                </a>
+                <a
+                  className="inline-flex border border-white px-4 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-[#111111]"
+                  href="/documents/nslg-bill-template.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open PDF
+                </a>
               </div>
             </article>
 
-            <article className="card min-h-[340px]">
+            <article className="card min-h-[340px] text-white" style={darkCard}>
               <div>
-                <div className="text-xs font-bold uppercase tracking-[.12em] text-muted">Research tool</div>
-                <h3 className="serif mt-5 text-4xl text-navy">Fact sheet template</h3>
-                <p className="mt-5 max-w-xl leading-7 text-slate-600">
+                <h3 className="serif text-4xl text-white">Fact sheet template</h3>
+                <p className="mt-5 max-w-xl leading-7 text-slate-200">
                   Build a concise, evidence-based case that covers the problem, its cause, how the policy responds, and the impacts it can create.
                 </p>
               </div>
-              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold text-navy">
-                <Link className="underline underline-offset-4" href="/documents/nslg-fact-sheet-template.docx">Download editable template</Link>
-                <Link className="underline underline-offset-4" href="/documents/nslg-fact-sheet-template.pdf">View PDF</Link>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <a
+                  className="inline-flex border border-white bg-white px-4 py-3 text-sm font-bold text-[#111111] transition hover:bg-slate-200"
+                  href="/documents/NSLG%20Fact%20Sheet%20Notes%20%2B%20Template.docx"
+                  download
+                >
+                  Download Word template
+                </a>
+                <a
+                  className="inline-flex border border-white px-4 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-[#111111]"
+                  href="/documents/nslg-fact-sheet-template.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open PDF
+                </a>
               </div>
             </article>
           </div>
