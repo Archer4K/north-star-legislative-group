@@ -3,7 +3,7 @@ import { PageHero } from "@/components/PageHero";
 export default function About() {
   return (
     <>
-      <PageHero kicker="About North Star" title="Ideas matter. Institutions decide.">
+      <PageHero kicker="About North Star" title="Empowering Local Activism.">
         <p className="lede mt-7 max-w-3xl">
           North Star Legislative Group is a nonpartisan legislative organization focused on turning evidence-based ideas into credible policy, advocacy, and institutional action.
         </p>
@@ -28,7 +28,7 @@ export default function About() {
           <div className="kicker">Track record</div>
           <h2 className="h2 mt-4">From ideas to institutions.</h2>
           <p className="lede mt-6 max-w-4xl">
-            North Star's leadership brings experience in policy drafting, legislative advocacy, fundraising, and large-scale community outreach. Collectively, our leaders have written more than five pieces of legislation introduced in state legislatures, raised over $20,000 for nonprofit initiatives, worked with more than half a dozen nonprofits across state lines, and organized hundreds of volunteers.
+            North Star's leadership brings experience in policy drafting, legislative advocacy, fundraising, and large-scale community outreach. Collectively, our leaders have written more than five pieces of legislation introduced in state legislatures, written grant applications totaling $5,000 for nonprofit initiatives, worked with more than half a dozen nonprofits across state lines, and organized hundreds of volunteers.
           </p>
         </div>
       </section>

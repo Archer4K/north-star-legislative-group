@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Team",
-  description: "Meet the North Star Legislative Group team: Colby Nixon, Arjun Rana, Saatvik Kailash, and Kaashyap Rajesh. Explore their policy work and contributions.",
+  description: "Meet the North Star Legislative Group team: Colby Nixon, Arjun Rana, and Saatvik Kailash. Explore their policy work and contributions.",
   alternates: { canonical: "/team" },
 };
 
@@ -16,7 +16,7 @@ export default function Team() {
     <>
       <PageHero kicker="Team" title="The people behind the policy." />
       <section className="section">
-        <div className="container-site grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="container-site grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((person) => (
             <Link key={person.slug} href={`/team/${person.slug}`} className="card flex flex-col !p-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink">
               <div className="relative aspect-square border-b border-[#3f3f3f]">

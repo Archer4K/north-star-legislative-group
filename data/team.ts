@@ -5,7 +5,6 @@ export const team = [
     title: "Executive Director",
     bio: "Colby Nixon founded North Star Legislative Group and developed the idea behind the Catch Heart Disease Early Act (SB 3670), leading outreach to support the bill. While in college, he continues to mentor North Star's other team members as they learn to draft policy and turn their ideas into action.",
   },
-  { slug: "kaashyap-rajesh", name: "Kaashyap Rajesh" },
   {
     slug: "arjun-rana",
     name: "Arjun Rana",
