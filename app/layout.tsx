@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://northstarlegislative.org"),
   title: { default:"North Star Legislative Group", template:"%s | North Star Legislative Group" },
   description:"North Star Legislative Group advances evidence-based public policy through legislative research, drafting, advocacy, and civic engagement."
 };

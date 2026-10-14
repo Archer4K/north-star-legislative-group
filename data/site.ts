@@ -1,6 +1,6 @@
 export const impact = [
   { value:"5+", label:"Legislation drafted" },
-  { value:"$10K+", label:"Money raised" },
+  { value:"$5K", label:"Grants written for" },
   { value:"6+", label:"Nonprofits supported" },
   { value:"10+", label:"Volunteers mobilized" },
 ];

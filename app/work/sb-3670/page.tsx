@@ -1,7 +1,10 @@
 import { PageHero } from "@/components/PageHero";
 import { ExternalLink } from "lucide-react";
+import { ProjectCredits } from "@/components/ProjectCredits";
+import { getProject } from "@/data/projects";
 export default function SB3670(){return <>
 <PageHero dark kicker="Illinois · Health policy" title={"Catch Heart Disease Early Act."}><p className="mt-7 max-w-3xl text-xl leading-8 text-slate-300">Illinois Senate Bill 3670 would create a statewide framework for no-cost heart disease screenings, with screening frequency increasing at age 40.</p><div className="mt-7 flex flex-wrap gap-2 text-xs uppercase tracking-[.12em]"><span className="border border-white/30 px-3 py-2">SB 3670</span><span className="border border-white/30 px-3 py-2">Introduced Feb. 5, 2026</span><span className="border border-white/30 px-3 py-2">Illinois Senate</span></div></PageHero>
+<section className="container-site pt-10"><div className="card"><h2 className="serif text-3xl">The people behind the proposal.</h2><ProjectCredits project={getProject("sb-3670")} /></div></section>
 <section className="section"><div className="container-site grid gap-12 lg:grid-cols-[240px_minmax(0,720px)] lg:justify-center">
 <aside className="text-sm text-muted"><div className="kicker">On this page</div><a href="#overview" className="block border-b border-line py-3">Overview</a><a href="#policy" className="block border-b border-line py-3">What the bill does</a><a href="#timeline" className="block border-b border-line py-3">Timeline</a><a href="#resources" className="block border-b border-line py-3">Resources</a></aside>
 <article className="[&_h2]:serif [&_h2]:mt-14 [&_h2]:text-4xl [&_p]:mt-4 [&_p]:text-[1.05rem] [&_p]:leading-8 [&_p]:text-slate-700">

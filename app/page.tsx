@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { impact } from "@/data/site";
+import { ProjectCredits } from "@/components/ProjectCredits";
+import { getProject } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -30,22 +32,23 @@ export default function Home() {
           <div className="kicker">Featured work</div>
           <h2 className="h2 mt-4">Catch Heart Disease Early Act.</h2>
           <div className="mt-10 grid gap-4">
-            <Link href="/work/sb-3670" className="card flex min-h-[340px] flex-col justify-between">
+            <article className="card flex min-h-[340px] flex-col justify-between">
               <div>
                 <div className="text-xs font-bold uppercase tracking-[.12em] text-slate-700">
                   Illinois · Senate Bill 3670 · Introduced
                 </div>
                 <h3 className="serif mt-5 text-4xl tracking-tight">
-                  Catch Heart Disease Early Act
+                  <Link href="/work/sb-3670" className="hover:underline">Catch Heart Disease Early Act</Link>
                 </h3>
                 <p className="mt-5 max-w-2xl text-slate-700">
                   Illinois Senate Bill 3670 expands access to no-cost heart disease screenings, with more frequent screening beginning at age 40.
                 </p>
               </div>
-              <span className="mt-12 flex items-center gap-2 font-bold">
-                Explore the Senate bill <ArrowUpRight size={16} />
-              </span>
-            </Link>
+              <ProjectCredits project={getProject("sb-3670")} />
+              <Link href="/work/sb-3670" className="mt-7 flex w-fit items-center gap-2 font-bold hover:underline">
+                Explore the Senate bill <ArrowUpRight size={16} aria-hidden="true" />
+              </Link>
+            </article>
           </div>
         </div>
       </section>
