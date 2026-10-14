@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const person = getTeamMember((await params).slug);
   if (!person) return { title: "Team member", robots: { index: false } };
   const title = `${person.name}${"title" in person ? `, ${person.title}` : ""}`;
-  const description = "bio" in person ? person.bio : `${person.name}'s work and contributions at North Star Legislative Group.`;
+  const description = person.searchDescription;
   const url = `https://northstarlegislative.org/team/${person.slug}`;
   return {
     title,
