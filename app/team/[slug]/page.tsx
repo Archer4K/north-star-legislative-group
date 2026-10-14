@@ -91,7 +91,6 @@ export default async function TeamProfile({ params }: Props) {
               </Link>
             ))}
           </div>
-          {contributions.length === 0 && <p className="mt-8 max-w-2xl leading-7 text-slate-700">Project credits will be added here as they are confirmed.</p>}
         </div>
       </section>
     </>
