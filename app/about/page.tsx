@@ -5,7 +5,7 @@ export default function About() {
     <>
       <PageHero kicker="About North Star" title="Empowering Local Activism.">
         <p className="lede mt-7 max-w-3xl">
-          North Star Legislative Group is a nonpartisan legislative organization focused on turning evidence-based ideas into credible policy, advocacy, and institutional action.
+          North Star Legislative Group is a nonpartisan 501(c)(4) nonprofit organization focused on turning evidence-based ideas into credible policy, advocacy, and institutional action.
         </p>
       </PageHero>
 
